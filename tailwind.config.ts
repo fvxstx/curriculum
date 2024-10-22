@@ -9,8 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        background: "#FFFFFF",
+        foreground: "#424B54",
+        primary: "#93A8AC",
+        secondary: "#E2B4BD",
+        thirth: "#c5d5e4",
+      },
+      fontFamily: {
+        rubick: ["Rubick", "sans-serif"],
       },
     },
   },
