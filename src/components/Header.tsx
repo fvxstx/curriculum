@@ -10,28 +10,34 @@ const Header = () => {
 
   return (
     <header className="flex w-full justify-between p-6">
-      <div className="flex gap-3 items-center justify-center">
+      <a className="flex gap-3 items-center justify-center" href="/">
         <div className="rounded-full w-8 h-8 bg-secondary"></div>
         <h1 className="font-bold text-xl">
           Fausto Torres <span className="font-light text-base">Developer</span>
         </h1>
-      </div>
+      </a>
       <nav className="md:block hidden">
         <ul className="flex justify-around gap-6 text-lg">
           <li>
-            <a href="/curriculo">Currículo</a>
+            <a href="/curriculo" className="hover:text-hover-foreground">
+              Currículo
+            </a>
           </li>
           <li>
             <div className="bg-foreground w-[2px] h-6"></div>
           </li>
           <li>
-            <a href="/projeto">Projeto</a>
+            <a href="/projeto" className="hover:text-hover-foreground">
+              Projeto
+            </a>
           </li>
           <li>
             <div className="bg-foreground w-[2px] h-6"></div>
           </li>
           <li>
-            <a href="/contato">Currículo</a>
+            <a href="/contato" className="hover:text-hover-foreground">
+              Currículo
+            </a>
           </li>
         </ul>
       </nav>

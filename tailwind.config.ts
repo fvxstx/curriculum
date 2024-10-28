@@ -14,6 +14,12 @@ const config: Config = {
         primary: "#93A8AC",
         secondary: "#E2B4BD",
         thirth: "#c5d5e4",
+        hover: {
+          primary: "#93A8BB",
+          secondary: "#E2B4CF",
+          thirth: "#c5d5ff",
+          foreground: "#424B6F",
+        },
       },
       fontFamily: {
         rubick: ["Rubick", "sans-serif"],
