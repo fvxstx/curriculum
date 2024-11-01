@@ -12,9 +12,9 @@ const MainContent = () => {
         <h2 className="font-bold text-6xl mb-6">Salve!</h2>
         <p className="font-semibold text-xl">Um pouco sobre mim</p>
         <p className="w-72 sm:w-96 font-thin">
-          Sou um desenvolvedor FullStack. Fluente em inglês, graduando Ciência
-          da Computação pela Faculdade Descomplica, com vivências de trabalho
-          internacional. Vivendo o agora!
+          Sou um desenvolvedor FullStack, atuando com C# .Net 8.0/6.0 no Backend
+          e Next.JS e AngularJS no Frontend. Muitas vivencias de trabalho tanto
+          no brasil quanto internacionalmente, sempre em frente.
         </p>
         <div>
           <ul className="text-black font-bold text-lg md:text-xl flex justify-center items-center gap-2 md:gap-4 mt-4">

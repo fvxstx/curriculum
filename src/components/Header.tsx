@@ -28,7 +28,7 @@ const Header = () => {
           </li>
           <li>
             <a href="/projeto" className="hover:text-hover-foreground">
-              Projeto
+              Projetos
             </a>
           </li>
           <li>
@@ -36,7 +36,7 @@ const Header = () => {
           </li>
           <li>
             <a href="/contato" className="hover:text-hover-foreground">
-              Currículo
+              Contato
             </a>
           </li>
         </ul>
