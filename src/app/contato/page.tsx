@@ -66,7 +66,7 @@ export default function ContatoPage() {
     <>
       <div className="flex flex-col w-full items-center justify-center">
         <Header />
-        <main className="h-[420px] w-full flex flex-col md:flex-row justify-around items-start md:mt-20 px-6 md:px-24 lg:px-32 max-w-[1400px]">
+        <main className="md:h-[420px] w-full flex flex-col md:flex-row justify-around items-start md:mt-20 px-6 md:px-24 lg:px-32 max-w-[1400px]">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold w-fit mt-4 inline-block md:mt-8">
               Contato
