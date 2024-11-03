@@ -67,7 +67,7 @@ const ModalNav = ({
           </li>
 
           <li>
-            <a href="/contato">Currículo</a>
+            <a href="/contato">Contato</a>
           </li>
         </ul>
       </nav>
