@@ -9,7 +9,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="flex w-full justify-between p-6">
+    <header className="flex w-full justify-between p-6 max-w-[1400px]">
       <a className="flex gap-3 items-center justify-center" href="/">
         <div className="rounded-full w-8 h-8 bg-secondary"></div>
         <h1 className="font-bold text-xl">
@@ -17,23 +17,18 @@ const Header = () => {
         </h1>
       </a>
       <nav className="md:block hidden">
-        <ul className="flex justify-around gap-6 text-lg">
-          <li>
-            <a href="/curriculo" className="hover:text-hover-foreground">
+        <ul className="flex justify-around  text-lg">
+          <li className="pr-3 mr-2 border-r-2 border-foreground">
+            <a href="/curriculo" className="hover:text-hover-foreground  ">
               Currículo
             </a>
           </li>
-          <li>
-            <div className="bg-foreground w-[2px] h-6"></div>
-          </li>
-          <li>
+          <li className="pr-3 mr-2 border-r-2 border-foreground">
             <a href="/projeto" className="hover:text-hover-foreground">
               Projetos
             </a>
           </li>
-          <li>
-            <div className="bg-foreground w-[2px] h-6"></div>
-          </li>
+
           <li>
             <a href="/contato" className="hover:text-hover-foreground">
               Contato

@@ -10,7 +10,7 @@ const SkillsCertification = () => {
       </h3>
       <div className="flex flex-col md:flex-row justify-around items-start w-full gap-4">
         <div className="flex flex-col gap-5">
-          <h4 className="text-xl md:text-2xl font-medium">Skills</h4>
+          <h4 className="text-xl md:text-2xl font-bold">Skills</h4>
           {skills.map((job, index) => (
             <JobComponent
               key={index}
@@ -21,8 +21,8 @@ const SkillsCertification = () => {
             />
           ))}
         </div>
-        <div className="flex flex-col gap-5">
-          <h4 className="text-xl md:text-2xl font-medium">Certificação</h4>
+        <div className="flex flex-col gap-5 mt-16 md:mt-0">
+          <h4 className="text-xl md:text-2xl font-bold">Certificação</h4>
           {certificacao.map((job, index) => (
             <JobComponent
               key={index}

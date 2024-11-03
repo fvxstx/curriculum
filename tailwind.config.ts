@@ -22,7 +22,14 @@ const config: Config = {
         },
       },
       fontFamily: {
-        rubick: ["Rubick", "sans-serif"],
+        supreme: [
+          "Supreme-Variable", // Primary variable font
+          "Supreme-Regular", // Fallback to regular
+          "Supreme-Bold", // Additional fallback
+          "sans-serif", // Generic fallback
+        ],
+        "supreme-thin": ["Supreme-Thin", "sans-serif"], // Thin variant
+        "supreme-bold": ["Supreme-Bold", "sans-serif"],
       },
     },
   },

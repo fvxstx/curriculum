@@ -11,7 +11,7 @@ const MainContent = () => {
       <div className="flex flex-col gap-2">
         <h2 className="font-bold text-6xl mb-6">Salve!</h2>
         <p className="font-semibold text-xl">Um pouco sobre mim</p>
-        <p className="w-72 sm:w-96 font-thin">
+        <p className="w-72 sm:w-96 ">
           Sou um desenvolvedor FullStack, atuando com C# .Net 8.0/6.0 no Backend
           e Next.JS e AngularJS no Frontend. Muitas vivencias de trabalho tanto
           no brasil quanto internacionalmente, sempre em frente.

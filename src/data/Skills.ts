@@ -35,10 +35,4 @@ export const skills: IJob[] = [
     job: "Banco de Dados",
     description: ["•PostgreSQL", "•MongoDB", "•MySQL"],
   },
-  {
-    period: "",
-    company: "",
-    job: "CI/CD",
-    description: ["•GitHub Actions", "•Azure DevOps"],
-  },
 ];
