@@ -5,7 +5,7 @@ import { skills } from "@/data/Skills";
 const SkillsCertification = () => {
   return (
     <section className="flex flex-col items-start w-full gap-4">
-      <h3 className="text-xl md:text-3xl font-semibold mb-6">
+      <h3 className="text-2xl md:text-3xl font-semibold mb-6">
         Skills & Cerficações
       </h3>
       <div className="flex flex-col md:flex-row justify-around items-start w-full gap-4">
