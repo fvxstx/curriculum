@@ -4,7 +4,6 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { SendEmail } from "../api/send/route";
 
 const contactSchema = z.object({
   firstName: z.string().min(1, { message: "Nome é obrigatório" }),
@@ -31,15 +30,32 @@ export default function ContatoPage() {
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
-    console.log(data);
-    await SendEmail({
-      name: data.firstName,
-      surname: data.lastName ?? "",
-      email: data.email,
-      assunto: data.subject ?? "",
-      message: data.message,
-    });
-    setIsSubmitting(false);
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          assunto: data.subject || "Sem Assunto",
+          name: data.firstName,
+          surname: data.lastName || "",
+          email: data.email,
+          message: data.message,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error("Erro ao enviar o email");
+      }
+
+      alert("Email enviado com sucesso!");
+    } catch (error) {
+      console.error("Erro ao enviar o email:", error);
+      alert("Ocorreu um erro ao enviar o email. Tente novamente mais tarde.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

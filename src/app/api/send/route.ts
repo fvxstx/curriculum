@@ -3,23 +3,13 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-export async function SendEmail({
-  assunto,
-  name,
-  surname,
-  email,
-  message,
-}: {
-  assunto: string;
-  name: string;
-  surname: string;
-  email: string;
-  message: string;
-}) {
+export async function POST(request: Request) {
   try {
+    const { assunto, name, surname, email, message } = await request.json();
+
     const { data, error } = await resend.emails.send({
       from: "onboarding@resend.dev",
-      to: "faut.btorres@gmail.com", //
+      to: "faut.btorres@gmail.com",
       subject: assunto,
       react: EmailTemplate({
         firstName: name,
@@ -30,11 +20,14 @@ export async function SendEmail({
     });
 
     if (error) {
-      return Response.json({ error }, { status: 500 });
+      return new Response(JSON.stringify({ error }), { status: 500 });
     }
 
-    return Response.json(data);
+    return new Response(JSON.stringify(data), { status: 200 });
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
   } catch (error) {
-    return Response.json({ error }, { status: 500 });
+    return new Response(JSON.stringify({ error: "Erro ao enviar o e-mail" }), {
+      status: 500,
+    });
   }
 }
