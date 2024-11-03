@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 import { z } from "zod";
 
 const contactSchema = z.object({
@@ -49,10 +50,12 @@ export default function ContatoPage() {
         throw new Error("Erro ao enviar o email");
       }
 
-      alert("Email enviado com sucesso!");
+      toast.success("Email enviado com sucesso!");
     } catch (error) {
       console.error("Erro ao enviar o email:", error);
-      alert("Ocorreu um erro ao enviar o email. Tente novamente mais tarde.");
+      toast.error(
+        "Ocorreu um erro ao enviar o email. Tente novamente mais tarde."
+      );
     } finally {
       setIsSubmitting(false);
     }
