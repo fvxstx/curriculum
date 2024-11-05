@@ -14,7 +14,7 @@ export const education: IJob[] = [
     description: [""],
   },
   {
-    period: "02/2020 - 02/2024",
+    period: "02/2020 - 02/2021",
     company: "Area 1 Wyden",
     job: "Ciência da Computação | Bacharelado",
     description: [""],

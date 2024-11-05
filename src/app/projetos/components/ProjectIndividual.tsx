@@ -17,16 +17,18 @@ const ProjectIndividual = (proj: IProject) => {
           </p>
         </h3>
         <p>{proj.description}</p>
-        <p>
-          Link:{" "}
-          <a
-            target="_blank"
-            href={proj.link}
-            className="text-primary underline"
-          >
-            {proj.link}
-          </a>
-        </p>
+        {proj.link && (
+          <p>
+            Link:{" "}
+            <a
+              target="_blank"
+              href={proj.link}
+              className="text-primary underline"
+            >
+              {proj.link}
+            </a>
+          </p>
+        )}
         <p>
           Repositorio:{" "}
           <a
@@ -42,7 +44,7 @@ const ProjectIndividual = (proj: IProject) => {
         <Carousel className="w-full overflow-hidden">
           <CarouselContent className="flex">
             {proj.imgs.map((src, index) => (
-              <CarouselItem key={index} className="flex-shrink-0 w-full h-fit">
+              <CarouselItem key={index} className="flex-shrink-0 w-full h-fit ">
                 <Image
                   src={src}
                   alt={`Project Image ${index + 1}`}
