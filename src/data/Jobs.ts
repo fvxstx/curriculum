@@ -59,7 +59,7 @@ export const jobs: IJob[] = [
   {
     period: "09/2020 - 04/2022",
     company: "Siscon Contabilidade",
-    job: "Assistente de contabilidade",
+    job: "Auxiliar de contabilidade",
     description: [
       "• Lançamentos Contábeis: Controle e realizo lançamentos contábeis no sistema Domínio.",
       "• Conciliação de Estoque: Realizo a conciliação de estoque para assegurar precisão nos registros.",
