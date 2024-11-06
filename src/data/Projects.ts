@@ -4,7 +4,7 @@ export interface IProject {
   description: string;
   link?: string;
   releaseDate: string;
-  repository: string;
+  repository?: string;
 }
 
 export const allProjects: IProject[] = [
@@ -45,11 +45,7 @@ export const allProjects: IProject[] = [
     repository: "https://github.com/fvxstx/alurakut",
   },
   {
-    imgs: [
-      "/projects/shortly.png",
-      "/projects/shortly2.png",
-      "/projects/shortly3.png",
-    ],
+    imgs: ["/projects/salesweb.png"],
     title: "Sales Web",
     description:
       "Projeto de um sistema CRUD de vendas, utilizando a data de vendedores e departamento como método de busca, colocando em tabelas os resultados",
@@ -68,5 +64,65 @@ export const allProjects: IProject[] = [
     link: "https://shortly-ashy.vercel.app/",
     releaseDate: "Março/2023",
     repository: "https://github.com/fvxstx/Shortly",
+  },
+  {
+    imgs: ["/projects/hspa.png", "/projects/hspa2.png", "/projects/hspa3.png"],
+    title: "HSPA",
+    description:
+      "Projeto de uma loja para alugar e vender propriedades, você pode registar a propriedade e escolher caso deseje a venda ou o alguem do imovel adicionado",
+    releaseDate: "Junho/2023",
+    repository: "https://github.com/fvxstx/HSPA",
+  },
+  {
+    imgs: [
+      "/projects/datingapp.png",
+      "/projects/datingapp2.png",
+      "/projects/datingapp3.png",
+      "/projects/datingapp4.png",
+    ],
+    title: "Dating App",
+    description:
+      "Projeto de um aplicativo de namoro em que você cria sua conta e consegue ver os usuários filtrados da manéira que desejar, pode curtir o usuário e mandar mensagem por um chat real",
+    releaseDate: "Junho/2023",
+    repository: "https://github.com/fvxstx/HSPA",
+  },
+  {
+    imgs: [
+      "/projects/personalisec.jpeg",
+      "/projects/personalisec2.jpeg",
+      "/projects/personalisec3.jpeg",
+      "/projects/personalisec4.jpeg",
+    ],
+    title: "Personalisec",
+    description:
+      "Projeto que gerenciar testes de personalidade corporativa em cibersegurança, com relatórios e dashboards que trazem insights segmentados por região e perfil. Atuei como fullstack com outros devs trabalhando com .Net 8.0 no Back e Next.JS no Front.",
+    releaseDate: "Julho/2024",
+  },
+  {
+    imgs: [
+      "/projects/prudent.jpeg",
+      "/projects/prudent2.jpeg",
+      "/projects/prudent3.jpeg",
+      "/projects/prudent4.jpeg",
+      "/projects/prudent5.jpeg",
+    ],
+    title: "Prudent Investor",
+    description:
+      "Um dos primeiros projetos reais que atuei dentro da empresa Projetil. Um site de investimentos com diversas funcinalidades de graficos, buscas, filtros. Atuei como fullstack junto com outros devs trabalhando com .Net 6.0 no Back e Next.JS no Front.",
+    link: "https://prudent-investor.com.br/",
+    releaseDate: "Agosto/2024",
+  },
+  {
+    imgs: [
+      "/projects/paycoin.png",
+      "/projects/paycoin2.png",
+      "/projects/paycoin3.png",
+      "/projects/paycoin4.png",
+      "/projects/paycoin5.png",
+    ],
+    title: "Paycoin",
+    description:
+      "Projeto que gerencia vendas e compras de produtos, com o paycoin é possivél criar produtos para vende-los criando paginas de checkout para venda de produtos. Atuei como fullstack com outros devs trabalhando com .Net 8.0 no Back e Next.JS no Front.",
+    releaseDate: "Setembro/2024",
   },
 ];

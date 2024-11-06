@@ -1,6 +1,6 @@
 const MainContent = () => {
   return (
-    <main className="flex flex-col-reverse md:flex-row gap-12 w-full items-center justify-center mt-4 md:mt-32 p-6">
+    <main className="flex flex-col-reverse md:flex-row gap-12 w-full items-center justify-center mt-4 md:mt-20 p-6">
       <div className="w-[19rem] h-[19rem] sm:w-[26rem] sm:h-[26rem] rounded-full">
         <img
           src="/me.jpg"

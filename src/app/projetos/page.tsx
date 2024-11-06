@@ -12,8 +12,8 @@ export default function ProjetosPage() {
           <h2 className="text-3xl md:text-5xl font-bold w-full mt-4 mb-8 md:mt-8 md:mb-20">
             Projetos
           </h2>
-          <section className="flex flex-col gap-20">
-            {allProjects.map((proj, index) => {
+          <section className="flex flex-col gap-20 md:gap-32">
+            {allProjects.reverse().map((proj, index) => {
               return (
                 <ProjectIndividual
                   key={index}

@@ -29,16 +29,18 @@ const ProjectIndividual = (proj: IProject) => {
             </a>
           </p>
         )}
-        <p>
-          Repositorio:{" "}
-          <a
-            target="_blank"
-            href={proj.repository}
-            className="text-primary underline"
-          >
-            {proj.repository}
-          </a>
-        </p>
+        {proj.repository && (
+          <p>
+            Repositorio:{" "}
+            <a
+              target="_blank"
+              href={proj.repository}
+              className="text-primary underline"
+            >
+              {proj.repository}
+            </a>
+          </p>
+        )}
       </div>
       <div className="w-full md:w-[500px] h-auto">
         <Carousel className="w-full overflow-hidden">
