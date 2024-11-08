@@ -13,20 +13,23 @@ export default function ProjetosPage() {
             Projetos
           </h2>
           <section className="flex flex-col gap-20 md:gap-32">
-            {allProjects.reverse().map((proj, index) => {
-              return (
-                <ProjectIndividual
-                  key={index}
-                  imgs={proj.imgs}
-                  title={proj.title}
-                  description={proj.description}
-                  link={proj.link}
-                  releaseDate={proj.releaseDate}
-                  repository={proj.repository}
-                  techs={proj.techs}
-                />
-              );
-            })}
+            {allProjects
+              .slice()
+              .reverse()
+              .map((proj, index) => {
+                return (
+                  <ProjectIndividual
+                    key={index}
+                    imgs={proj.imgs}
+                    title={proj.title}
+                    description={proj.description}
+                    link={proj.link}
+                    releaseDate={proj.releaseDate}
+                    repository={proj.repository}
+                    techs={proj.techs}
+                  />
+                );
+              })}
           </section>
         </main>
       </div>
