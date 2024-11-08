@@ -5,6 +5,7 @@ export interface IProject {
   link?: string;
   releaseDate: string;
   repository?: string;
+  techs: string[];
 }
 
 export const allProjects: IProject[] = [
@@ -16,6 +17,7 @@ export const allProjects: IProject[] = [
     link: "https://maratona-discovery-beige.vercel.app/",
     releaseDate: "Março/2021",
     repository: "https://github.com/fvxstx/maratona-discovery",
+    techs: ["HTML", "CSS", "Javascript"],
   },
   {
     imgs: ["/projects/alurakut.png", "/projects/alurakut2.png"],
@@ -25,6 +27,7 @@ export const allProjects: IProject[] = [
     link: "https://alurakut-eight-pi.vercel.app/login",
     releaseDate: "Agosto/2021",
     repository: "https://github.com/fvxstx/alurakut",
+    techs: ["HTML", "CSS", "Javascript", "React.JS", "Next.JS", "Node.JS"],
   },
   {
     imgs: ["/projects/aluracord.png"],
@@ -34,6 +37,15 @@ export const allProjects: IProject[] = [
     link: "https://aluracord-bay-gamma.vercel.app/",
     releaseDate: "Fevereiro/2022",
     repository: "https://github.com/fvxstx/aluracord",
+    techs: [
+      "HTML",
+      "CSS",
+      "Javascript",
+      "React.JS",
+      "Next.JS",
+      "Node.JS",
+      "Supabase",
+    ],
   },
   {
     imgs: ["/projects/countdown.png", "/projects/countdown2.png"],
@@ -42,7 +54,18 @@ export const allProjects: IProject[] = [
       "Um dos meus primeiros projeto feito sozinho. Um coundown simples que você pode se increver para receber fotos exclusivas de um grande fotografo baiano.",
     link: "https://countdown-zeta-nine.vercel.app/",
     releaseDate: "Julho/2022",
-    repository: "https://github.com/fvxstx/alurakut",
+    repository: "https://github.com/fvxstx/Countdown",
+    techs: [
+      "HTML",
+      "CSS",
+      "SASS",
+      "Javascript",
+      "React.JS",
+      "Next.JS",
+      "Node.JS",
+      "Supabase",
+      "Sendgrid",
+    ],
   },
   {
     imgs: ["/projects/salesweb.png"],
@@ -51,6 +74,7 @@ export const allProjects: IProject[] = [
       "Projeto de um sistema CRUD de vendas, utilizando a data de vendedores e departamento como método de busca, colocando em tabelas os resultados",
     releaseDate: "Setembro/2022",
     repository: "https://github.com/fvxstx/SalesWeb",
+    techs: ["C#", ".Net", "SQL Server", "Bootstrap"],
   },
   {
     imgs: [
@@ -64,6 +88,14 @@ export const allProjects: IProject[] = [
     link: "https://shortly-ashy.vercel.app/",
     releaseDate: "Março/2023",
     repository: "https://github.com/fvxstx/Shortly",
+    techs: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React.JS",
+      "Next.JS",
+      "Styled-Component",
+    ],
   },
   {
     imgs: ["/projects/hspa.png", "/projects/hspa2.png", "/projects/hspa3.png"],
@@ -72,6 +104,7 @@ export const allProjects: IProject[] = [
       "Projeto de uma loja para alugar e vender propriedades, você pode registar a propriedade e escolher caso deseje a venda ou o alguem do imovel adicionado",
     releaseDate: "Junho/2023",
     repository: "https://github.com/fvxstx/HSPA",
+    techs: ["HTML", "CSS", "Typescript", "AngularJS", "Bootstrap"],
   },
   {
     imgs: [
@@ -84,7 +117,18 @@ export const allProjects: IProject[] = [
     description:
       "Projeto de um aplicativo de namoro em que você cria sua conta e consegue ver os usuários filtrados da manéira que desejar, pode curtir o usuário e mandar mensagem por um chat real",
     releaseDate: "Junho/2023",
-    repository: "https://github.com/fvxstx/HSPA",
+    repository: "https://github.com/fvxstx/DatingApp",
+    techs: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "AngularJS",
+      "Bootstrap",
+      "C#",
+      ".Net",
+      "SQL Server",
+      "Docker",
+    ],
   },
   {
     imgs: [
@@ -97,6 +141,17 @@ export const allProjects: IProject[] = [
     description:
       "Projeto que gerenciar testes de personalidade corporativa em cibersegurança, com relatórios e dashboards que trazem insights segmentados por região e perfil. Atuei como fullstack com outros devs trabalhando com .Net 8.0 no Back e Next.JS no Front.",
     releaseDate: "Julho/2024",
+    techs: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React.JS",
+      "Next.JS",
+      "C#",
+      ".Net 8.0",
+      "Postgres SQL",
+      "Azure Devops",
+    ],
   },
   {
     imgs: [
@@ -111,6 +166,17 @@ export const allProjects: IProject[] = [
       "Um dos primeiros projetos reais que atuei dentro da empresa Projetil. Um site de investimentos com diversas funcinalidades de graficos, buscas, filtros. Atuei como fullstack junto com outros devs trabalhando com .Net 6.0 no Back e Next.JS no Front.",
     link: "https://prudent-investor.com.br/",
     releaseDate: "Agosto/2024",
+    techs: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React.JS",
+      "Next.JS",
+      "C#",
+      ".Net 6.0",
+      "Postgres SQL",
+      "Azure Devops",
+    ],
   },
   {
     imgs: [
@@ -124,5 +190,16 @@ export const allProjects: IProject[] = [
     description:
       "Projeto que gerencia vendas e compras de produtos, com o paycoin é possivél criar produtos para vende-los criando paginas de checkout para venda de produtos. Atuei como fullstack com outros devs trabalhando com .Net 8.0 no Back e Next.JS no Front.",
     releaseDate: "Setembro/2024",
+    techs: [
+      "HTML",
+      "CSS",
+      "Typescript",
+      "React.JS",
+      "Next.JS",
+      "C#",
+      ".Net 8.0",
+      "Postgres SQL",
+      "Azure Devops",
+    ],
   },
 ];

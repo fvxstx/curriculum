@@ -23,6 +23,7 @@ export default function ProjetosPage() {
                   link={proj.link}
                   releaseDate={proj.releaseDate}
                   repository={proj.repository}
+                  techs={proj.techs}
                 />
               );
             })}

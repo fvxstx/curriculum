@@ -41,12 +41,22 @@ const ProjectIndividual = (proj: IProject) => {
             </a>
           </p>
         )}
+        <div className="flex text-sm gap-4 flex-wrap">
+          {proj.techs.map((tec, x) => (
+            <span key={x} className="p-2 bg-primary text-white rounded">
+              {tec}
+            </span>
+          ))}
+        </div>
       </div>
       <div className="w-full md:w-[500px] h-auto">
         <Carousel className="w-full overflow-hidden">
-          <CarouselContent className="flex">
+          <CarouselContent className="flex max-h-[282px] ">
             {proj.imgs.map((src, index) => (
-              <CarouselItem key={index} className="flex-shrink-0 w-full h-fit ">
+              <CarouselItem
+                key={index}
+                className="flex-shrink-0 w-full h-fit md:max-h-[282px] "
+              >
                 <Image
                   src={src}
                   alt={`Project Image ${index + 1}`}
