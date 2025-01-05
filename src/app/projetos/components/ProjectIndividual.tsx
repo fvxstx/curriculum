@@ -1,3 +1,4 @@
+"use client";
 import {
   Carousel,
   CarouselContent,
@@ -5,8 +6,23 @@ import {
 } from "@/components/ui/carousel";
 import { IProject } from "@/data/Projects";
 import Image from "next/image";
+import { useState } from "react";
 
 const ProjectIndividual = (proj: IProject) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === proj.imgs.length - 1 ? 0 : prevIndex + 1
+    );
+  };
+
+  const handleBack = () => {
+    setCurrentIndex((prevIndex) =>
+      prevIndex === 0 ? proj.imgs.length - 1 : prevIndex - 1
+    );
+  };
+
   return (
     <div className="flex flex-col md:flex-row gap-12 justify-center items-start p-2">
       <div className="flex flex-col gap-3 justify-start max-w-[422px]">
@@ -51,7 +67,10 @@ const ProjectIndividual = (proj: IProject) => {
       </div>
       <div className="w-full md:w-[500px] h-auto">
         <Carousel className="w-full overflow-hidden">
-          <CarouselContent className="flex max-h-[282px] ">
+          <CarouselContent
+            className="flex max-h-[282px] transition-transform duration-300"
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
             {proj.imgs.map((src, index) => (
               <CarouselItem
                 key={index}
@@ -68,6 +87,20 @@ const ProjectIndividual = (proj: IProject) => {
             ))}
           </CarouselContent>
         </Carousel>
+        <div className="flex justify-around items-center mt-4">
+          <button
+            onClick={handleBack}
+            className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition"
+          >
+            Back
+          </button>
+          <button
+            onClick={handleNext}
+            className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition"
+          >
+            Next
+          </button>
+        </div>
       </div>
     </div>
   );
