@@ -237,12 +237,12 @@ export const allProjects: IProject[] = [
       "/projects/projetil2.png",
       "/projects/projetil3.png",
       "/projects/projetil4.png",
-      "/projects/projetil5.png",
     ],
     title: "Projetil",
     description:
       "Este projeto foi desenvolvido para apresentar a identidade e os serviços da software house. O site conta com uma seção de notícias para atualizações e novidades do setor, um fórum interativo para troca de ideias entre usuários, uma página de contato para suporte e atendimento, e um portfólio detalhado que exibe os projetos realizados pela empresa. A plataforma oferece uma solução completa para comunicar a expertise da empresa, engajar o público e fortalecer sua presença online.",
     releaseDate: "Outubro/2024",
+    link: "https://www.projetil.com/",
     techs: [
       "HTML",
       "CSS",
