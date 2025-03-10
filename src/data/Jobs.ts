@@ -9,7 +9,7 @@ export const jobs: IJob[] = [
   {
     period: "07/2024 - Atual",
     company: "Projetil",
-    job: "Desenvolvedor Fullstack - Junior",
+    job: "Software Engineer - Junior",
     description: [
       "• Desenvolvimento Backend: Implementar e manter APIs e serviços, desenvolver APIs RESTful, serviços web e lógica de negócios utilizando .NET C#",
       "• Desenvolvimento Frontend: Criar e otimizar interfaces de usuário dinâmicas e responsivas, construir componentes reutilizáveis e gerenciar estados em Next.js.",

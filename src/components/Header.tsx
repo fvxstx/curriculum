@@ -17,7 +17,8 @@ const Header = () => {
       <a className="flex gap-3 items-center justify-center" href="/">
         <div className="rounded-full w-8 h-8 bg-secondary"></div>
         <h1 className="font-bold text-xl">
-          Fausto Torres <span className="font-light text-base">Developer</span>
+          Fausto Torres{" "}
+          <span className="font-light text-base">- Scientist</span>
         </h1>
       </a>
       <nav className="md:block hidden">
