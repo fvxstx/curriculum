@@ -1,9 +1,20 @@
+"use client";
+
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ProjectIndividual from "./components/ProjectIndividual";
-import { allProjects } from "@/data/Projects";
+import { IProject, projectsPaged } from "@/data/Projects";
+import { useEffect, useState } from "react";
+import { Pagination } from "@/components/Pagination";
 
 export default function ProjetosPage() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const [projects, setProjects] = useState<IProject[]>([]);
+
+  useEffect(() => {
+    setProjects(projectsPaged.projects[currentPage]);
+  }, [currentPage]);
+
   return (
     <>
       <div className="flex flex-col w-full items-center justify-center ">
@@ -13,7 +24,7 @@ export default function ProjetosPage() {
             Projetos
           </h2>
           <section className="flex flex-col gap-20 md:gap-32">
-            {allProjects
+            {projects
               .slice()
               .reverse()
               .map((proj, index) => {
@@ -30,6 +41,14 @@ export default function ProjetosPage() {
                   />
                 );
               })}
+          </section>
+          <section className="flex items-center justify-center w-full mt-16">
+            <Pagination
+              totalCount={projectsPaged.totalProjects}
+              handlePage={setCurrentPage}
+              pageIndex={currentPage}
+              perPage={10}
+            />
           </section>
         </main>
       </div>
