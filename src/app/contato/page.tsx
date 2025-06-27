@@ -74,7 +74,7 @@ export default function ContatoPage() {
             <p className="text-lg mt-2">Vamos conversar!</p>
             <div className="flex mt-6 flex-col items-start ">
               <p className="text-lg font-bold">Telefone</p>
-              <p>(71) 99974-6649</p>
+              <p>+55 (71) 99974-6649</p>
             </div>
             <div className="flex mt-3 flex-col items-start ">
               <p className="text-lg font-bold">Email</p>
