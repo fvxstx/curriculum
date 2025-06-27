@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={` antialiased flex items-center flex-col relative justify-between min-h-screen h-full w-screen font-supreme bg-background text-foreground`}
+        className={`overflow-x-hidden antialiased flex items-center flex-col relative justify-between min-h-screen h-full w-screen font-supreme bg-background text-foreground`}
       >
         {children}
         <ToastContainer

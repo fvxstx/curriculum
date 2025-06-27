@@ -74,14 +74,15 @@ const ProjectIndividual = (proj: IProject) => {
             {proj.imgs.map((src, index) => (
               <CarouselItem
                 key={index}
-                className="flex-shrink-0 w-full h-fit md:max-h-[282px] "
+                className="flex-shrink-0 w-full h-[282px] md:max-h-[282px] "
               >
                 <Image
                   src={src}
                   alt={`Project Image ${index + 1}`}
-                  width={500}
-                  height={500}
-                  className="w-full h-auto object-cover"
+                  width={5000}
+                  height={5000}
+                  quality={100}
+                  className="w-full h-auto object-cover object-center"
                 />
               </CarouselItem>
             ))}
@@ -90,13 +91,13 @@ const ProjectIndividual = (proj: IProject) => {
         <div className="flex justify-around items-center mt-4">
           <button
             onClick={handleBack}
-            className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition"
+            className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition hover:bg-primary"
           >
             Back
           </button>
           <button
             onClick={handleNext}
-            className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition"
+            className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition hover:bg-primary"
           >
             Next
           </button>

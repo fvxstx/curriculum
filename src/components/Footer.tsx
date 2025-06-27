@@ -7,15 +7,15 @@ const Footer = () => {
       <div className="w-full h-[1px] bg-[#c7c7c7] my-8"></div>
       <div className="flex flex-col gap-4 md:gap-0 md:flex-row md:justify-between">
         <div>
-          <p className="font-bold text-xl">Telefone</p>
+          <p className="font-bold text-xl mb-2">Telefone</p>
           <p>+55 (71) 99974-9949</p>
         </div>
         <div>
-          <p className="font-bold text-xl">Email</p>
+          <p className="font-bold text-xl mb-2">Email</p>
           <p>faut.btorres@gmail.com</p>
         </div>
         <div>
-          <p className="font-bold text-xl">Me siga</p>
+          <p className="font-bold text-xl mb-2">Me siga</p>
           <div className="flex gap-4">
             <a href="https://www.linkedin.com/in/fvxstx" target="_blank">
               <FaLinkedinIn

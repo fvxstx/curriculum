@@ -13,6 +13,7 @@ export default function ProjetosPage() {
 
   useEffect(() => {
     setProjects(projectsPaged.projects[currentPage]);
+    if (window) window.scrollTo({ top: 0, behavior: "smooth" });
   }, [currentPage]);
 
   return (

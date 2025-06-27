@@ -18,9 +18,9 @@ const MainContent = () => {
         <h2 className="font-bold text-6xl mb-6">Salve!</h2>
         <p className="font-semibold text-xl">Um pouco sobre mim</p>
         <p className="w-72 sm:w-96 ">
-          Sou um Ciêntista da Computação, atuando com C# .Net 8.0/6.0 no Backend
-          e Next.JS e AngularJS no Frontend. Muitas vivencias de trabalho tanto
-          no Brasil quanto internacionalmente, sempre em frente.
+          Cientista da Computação e desenvolvedor Full-Stack com uma vivência
+          profissional que abrange o Brasil e o cenário internacional. Focado em
+          criar soluções de software robustas e eficientes.
         </p>
         <div>
           <ul className="text-black font-bold text-lg md:text-xl flex justify-center items-center gap-2 md:gap-4 mt-4">

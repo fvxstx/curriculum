@@ -18,49 +18,6 @@ export const projectsPaged: IPagedProjects = {
     [],
     [
       {
-        imgs: ["/projects/salesweb/salesweb.png"],
-        title: "Sales Web",
-        description:
-          "Este projeto é um sistema completo de gerenciamento de vendas, desenvolvido com funcionalidades CRUD (Criar, Ler, Atualizar e Excluir). A aplicação permite realizar buscas por dados de vendedores e departamentos, exibindo os resultados de forma organizada em tabelas. É uma ferramenta eficaz para acompanhar e gerenciar informações de vendas, proporcionando uma interface clara e prática para usuários.",
-        releaseDate: "Setembro/2022",
-        repository: "https://github.com/fvxstx/SalesWeb",
-        techs: ["C#", ".Net", "SQL Server", "Bootstrap"],
-      },
-      {
-        imgs: [
-          "/projects/shortly/shortly.png",
-          "/projects/shortly/shortly2.png",
-          "/projects/shortly/shortly3.png",
-        ],
-        title: "Shortly",
-        description:
-          "Este projeto foi desenvolvido para simplificar e otimizar o compartilhamento de links. A aplicação permite encurtar URLs, tornando-as mais compactas e fáceis de compartilhar. Além disso, oferece a funcionalidade de ocultar links originais, agregando uma camada extra de privacidade e profissionalismo. Uma solução prática e eficiente para gerenciar links de forma personalizada.",
-        link: "https://shortly-ashy.vercel.app/",
-        releaseDate: "Março/2023",
-        repository: "https://github.com/fvxstx/Shortly",
-        techs: [
-          "HTML",
-          "CSS",
-          "Typescript",
-          "React.JS",
-          "Next.JS",
-          "Styled-Component",
-        ],
-      },
-      {
-        imgs: [
-          "/projects/hspa/hspa.png",
-          "/projects/hspa/hspa2.png",
-          "/projects/hspa/hspa3.png",
-        ],
-        title: "HSPA",
-        description:
-          "Este projeto é uma aplicação desenvolvida para facilitar a gestão e comercialização de imóveis. A plataforma permite que os usuários registrem propriedades, oferecendo a opção de disponibilizá-las para venda ou aluguel. Com uma interface intuitiva, o sistema organiza e exibe as propriedades cadastradas, proporcionando uma experiência prática e eficiente para proprietários e interessados.",
-        releaseDate: "Junho/2023",
-        repository: "https://github.com/fvxstx/HSPA",
-        techs: ["HTML", "CSS", "Typescript", "AngularJS", "Bootstrap"],
-      },
-      {
         imgs: [
           "/projects/datingapp/datingapp.png",
           "/projects/datingapp/datingapp2.png",
@@ -69,7 +26,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Dating App",
         description:
-          "Este projeto é um aplicativo de namoro projetado para conectar pessoas de forma prática e personalizada. Os usuários podem criar suas contas, visualizar perfis com filtros ajustáveis para encontrar combinações ideais, e interagir por meio de curtidas. Além disso, a plataforma conta com um sistema de chat em tempo real, permitindo conversas diretas e imediatas, criando uma experiência interativa e envolvente.",
+          "Desenvolvi um aplicativo de namoro focado em proporcionar conexões práticas e personalizadas. A plataforma permite que usuários criem suas contas, visualizem perfis com filtros ajustáveis para encontrar compatibilidade ideal e interajam através de 'curtidas'. Para fomentar a conexão, o aplicativo integra um sistema de chat em tempo real, facilitando conversas diretas e imediatas e garantindo uma experiência interativa e envolvente.",
         releaseDate: "Junho/2023",
         repository: "https://github.com/fvxstx/DatingApp",
         techs: [
@@ -94,7 +51,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Plataforma de Ações",
         description:
-          "Este foi o primeiro projeto em que atuei dentro de uma empresa, desempenhando um papel significativo no desenvolvimento. A aplicação oferece duas modalidades de acesso: administrador e usuário comum. O administrador pode cadastrar empresas e inserir seus dados, enquanto o usuário comum tem acesso a informações organizadas por ano e mês, apresentadas por meio de gráficos e tabelas interativos. Além disso, a plataforma inclui um fórum para dúvidas e comentários, promovendo a interação entre os usuários. O sistema funciona por assinatura, e minha contribuição incluiu o desenvolvimento do backend, ajustes, e a criação de telas no frontend.",
+          "Desenvolvi o Prudent Investor, um site robusto e dinâmico projetado para investidores. A plataforma integra uma ampla gama de funcionalidades, incluindo gráficos interativos, ferramentas de busca e filtros avançados para explorar diversas opções de investimento, como criptomoedas, ações e fundos de investimento. Além disso, o site oferece notícias atualizadas e calendários de dividendos, entregando uma experiência completa e informativa para a gestão de investimentos dos usuários.",
         releaseDate: "Agosto/2024",
         techs: [
           "HTML",
@@ -120,7 +77,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Prudent Investor",
         description:
-          "Este foi um dos primeiros projetos reais em que atuei durante minha experiência na empresa Projetil. Desenvolvemos um site robusto e dinâmico voltado para investidores, com uma ampla gama de funcionalidades. A plataforma inclui gráficos interativos, ferramentas de busca e filtros avançados para explorar opções como criptomoedas, ações, fundos de investimento, entre outros. Além disso, oferece acesso a notícias atualizadas, calendários de dividendos e muito mais, entregando aos usuários uma experiência completa e informativa para a gestão de seus investimentos.",
+          "Um site robusto e dinâmico projetado para investidores. A plataforma integra uma ampla gama de funcionalidades, incluindo gráficos interativos, ferramentas de busca e filtros avançados para explorar diversas opções de investimento, como criptomoedas, ações e fundos de investimento. Além disso, o site oferece notícias atualizadas e calendários de dividendos, entregando uma experiência completa e informativa para a gestão de investimentos dos usuários.",
         link: "https://prudent-investor.com.br/",
         releaseDate: "Agosto/2024",
         techs: [
@@ -145,7 +102,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Personalisec",
         description:
-          "Este projeto foi desenvolvido para gerenciar testes de personalidade voltados ao ambiente corporativo, com foco em cibersegurança. A aplicação permite a coleta e análise de dados, gerando relatórios detalhados e dashboards interativos. Os insights são apresentados de forma segmentada por região e perfil, oferecendo uma visão estratégica e personalizada para tomada de decisão. Uma ferramenta robusta e inovadora para apoiar a segurança organizacional.",
+          "Uma aplicação especializada na gestão de testes de personalidade para o ambiente corporativo, com um foco específico em cibersegurança. A plataforma permite a coleta e análise de dados, gerando relatórios detalhados e dashboards interativos. Os insights são apresentados de forma segmentada por região e perfil, oferecendo uma visão estratégica e personalizada para a tomada de decisões. Esta é uma ferramenta robusta e inovadora que visa fortalecer a segurança organizacional.",
         releaseDate: "Julho/2024",
         techs: [
           "HTML",
@@ -170,7 +127,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Paycoin",
         description:
-          "Este projeto foi desenvolvido para simplificar a gestão de vendas e compras de produtos. Com a integração do Paycoin, os usuários podem criar produtos e disponibilizá-los para venda por meio de páginas de checkout personalizadas. A plataforma oferece uma solução prática e eficiente para comerciantes gerenciarem suas transações de forma segura e organizada, otimizando o processo de venda online.",
+          "Um projeto focado em simplificar a gestão de vendas e compras. Com a integração do Paycoin, a plataforma permite que usuários criem produtos e os disponibilizem para venda através de páginas de checkout personalizadas. Esta solução prática e eficiente capacita comerciantes a gerenciar suas transações de forma segura e organizada, otimizando significativamente o processo de venda online.",
         releaseDate: "Setembro/2024",
         link: "https://www.paycoinbr.com/",
         techs: [
@@ -195,7 +152,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Projetil",
         description:
-          "Este projeto foi desenvolvido para apresentar a identidade e os serviços da software house. O site conta com uma seção de notícias para atualizações e novidades do setor, um fórum interativo para troca de ideias entre usuários, uma página de contato para suporte e atendimento, e um portfólio detalhado que exibe os projetos realizados pela empresa. A plataforma oferece uma solução completa para comunicar a expertise da empresa, engajar o público e fortalecer sua presença online.",
+          "Desenvolvi o site institucional da software house Projetil, com o objetivo de apresentar sua identidade e portfólio de serviços. A plataforma inclui uma seção de notícias para manter os usuários atualizados com as novidades do setor, e uma página de contato dedicada a suporte e atendimento. Adicionalmente, um portfólio detalhado exibe os projetos concluídos pela empresa. Esta solução abrangente comunica eficazmente a expertise da Projetil, engaja seu público e fortalece sua presença digital.",
         releaseDate: "Outubro/2024",
         link: "https://www.projetil.com/",
         techs: [
@@ -216,7 +173,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Bloxtrade",
         description:
-          "Este projeto foi desenvolvido para oferecer soluções de pagamento em USD de forma simples e segura. A aplicação permite realizar transações utilizando USDT (TRC20), garantindo segurança e eficiência. Além disso, conta com um painel administrativo completo para controle, facilitando a gestão de clientes, carteiras digitais e processamento de pagamentos. Uma ferramenta robusta para transações seguras e gestão financeira eficiente.",
+          "Projeto desenvolvido para prover soluções de pagamento em USD com foco em simplicidade e segurança. A aplicação permite a realização de transações utilizando USDT (TRC20), assegurando eficiência e confiabilidade. Adicionalmente, a plataforma inclui um painel administrativo completo para controle e gestão de clientes, carteiras digitais e processamento de pagamentos. É uma ferramenta robusta para transações seguras e gestão financeira eficaz.",
         releaseDate: "Dezembro/2024",
         link: "https://www.bloxtrade.com.br/",
         techs: [
@@ -234,6 +191,85 @@ export const projectsPaged: IPagedProjects = {
           "Troca de idiómas dinâmica",
         ],
       },
+      {
+        imgs: [
+          "/projects/alpinistas/alpinistas.png",
+          "/projects/alpinistas/alpinistas2.png",
+          "/projects/alpinistas/alpinistas3.png",
+        ],
+        title: "Alpinistas",
+        description:
+          "Este projeto é um software de cibersegurança abrangente, desenvolvido para proteger empresas contra ameaças digitais, acessos indevidos e vazamento de dados. A aplicação oferece monitoramento e identificação de riscos em tempo real, garantindo segurança contínua, conformidade regulatória e controle total sobre a infraestrutura de rede. É uma solução ideal para organizações que gerenciam dados sensíveis e exigem proteção ininterrupta, promovendo maior confiança e reduzindo vulnerabilidades.",
+        link: "https://alpinistas.io/",
+        releaseDate: "Janeiro/2025",
+        techs: [
+          "HTML",
+          "CSS",
+          "Typescript",
+          "React.JS",
+          "Next.JS",
+          "Tailwind",
+          "Azure Devops",
+          "C#",
+          ".Net 8.0",
+          "Postgres SQL",
+          "Integrações de Email",
+          "Integrações de API Externas",
+        ],
+      },
+      {
+        imgs: [
+          "/projects/lizeloca/lizeloca.png",
+          "/projects/lizeloca/lizeloca2.png",
+          "/projects/lizeloca/lizeloca3.png",
+        ],
+        title: "LizeLoca",
+        description:
+          "Este projeto é uma plataforma de gestão desenvolvida para otimizar o gerenciamento de aluguel de espaços por hora. A aplicação permite o controle simplificado de salas, reservas e pagamentos, além de facilitar a comunicação entre administradores, clientes e usuários finais (como alunos e professores). Com foco na eficiência, a ferramenta oferece funcionalidades robustas para organizar e exibir as disponibilidades de um espaço versátil e equipado, garantindo uma experiência prática e eficaz para a gestão de negócios de locação.",
+        link: "https://lizeloca.com.br/",
+        releaseDate: "Fevereiro/2025",
+        techs: [
+          "HTML",
+          "CSS",
+          "Typescript",
+          "React.JS",
+          "Next.JS",
+          "Tailwind",
+          "Azure Devops",
+          "C#",
+          ".Net 8.0",
+          "Postgres SQL",
+          "Integrações de Email",
+        ],
+      },
+      {
+        imgs: [
+          "/projects/modulopro/modulopro.png",
+          "/projects/modulopro/modulopro2.png",
+          "/projects/modulopro/modulopro3.png",
+        ],
+        title: "Modulo Pro",
+        description:
+          "Este projeto é uma aplicação revolucionária para diagnósticos de ECUs (Unidades de Controle Eletrônico), desenvolvida para o mercado de reparo automotivo. O Módulo Pro visa otimizar o trabalho de reparadores de placas eletrônicas, oferecendo diagnósticos rápidos e precisos com uma visualização 3D intuitiva. O software permite a visualização segura de esquemas elétricos, destacando interativamente trilhas e componentes, além de contar com busca avançada por filtros e a geração de relatórios em PDF. A solução garante maior precisão, reduz erros e aumenta a eficiência nos reparos.",
+        releaseDate: "Abril/2025",
+        techs: [
+          "HTML",
+          "CSS",
+          "Typescript",
+          "React.JS",
+          "Next.JS",
+          "Tailwind",
+          "Azure Devops",
+          "C#",
+          ".Net 8.0",
+          "Postgres SQL",
+          "Integrações de Email",
+          "Integrações Externas",
+          "Altium",
+          "Aplicação Web",
+          "Electron JS",
+        ],
+      },
     ],
     [
       {
@@ -243,7 +279,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Dev.Finance$",
         description:
-          "Este foi um dos meus primeiros projetos, desenvolvido com o apoio da Rocketseat. Trata-se de uma aplicação simples e eficiente para gestão financeira pessoal. A carteira armazena informações localmente, permitindo que o usuário registre entradas e saídas de valores, com descrição e data. Além disso, exibe uma listagem completa das transações realizadas, proporcionando uma visão clara e organizada das movimentações financeiras.",
+          "Desenvolvido como um dos meus primeiros projetos significativos, com o suporte da Rocketseat, o Dev.Finance$ é uma aplicação de gestão financeira pessoal focada na simplicidade e eficiência. A solução permite o registro detalhado de entradas e saídas de valores, incluindo descrição e data da transação, com armazenamento local dos dados para conveniência do usuário. O sistema oferece uma listagem completa e organizada das movimentações financeiras, proporcionando uma visão clara e controlada da saúde financeira.",
         link: "https://maratona-discovery-beige.vercel.app/",
         releaseDate: "Março/2021",
         repository: "https://github.com/fvxstx/maratona-discovery",
@@ -256,7 +292,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Alurakut",
         description:
-          "Desenvolvido em parceria com a Alura, este projeto recria o design nostálgico da antiga rede social Orkut, integrando funcionalidades modernas. A aplicação permite que o usuário faça login utilizando seu perfil do GitHub, visualize seus seguidores diretamente da plataforma e crie comunidades personalizadas. Uma combinação de design clássico com tecnologia atual, oferecendo uma experiência social interativa e conectada.",
+          "Este projeto, desenvolvido em colaboração com a Alura, é uma recriação da icônica rede social Orkut, combinando seu design nostálgico com funcionalidades modernas. A aplicação permite o login direto via perfil do GitHub, facilitando o acesso e a integração com a comunidade de desenvolvedores. Usuários podem visualizar seus seguidores do GitHub na plataforma e criar comunidades personalizadas, proporcionando uma experiência social interativa que une o charme do passado com a tecnologia atual.",
         link: "https://alurakut-eight-pi.vercel.app/login",
         releaseDate: "Agosto/2021",
         repository: "https://github.com/fvxstx/alurakut",
@@ -266,7 +302,7 @@ export const projectsPaged: IPagedProjects = {
         imgs: ["/projects/aluracord/aluracord.png"],
         title: "Aluracord",
         description:
-          "Desenvolvido em parceria com a Alura, este projeto é um chat em tempo real que combina simplicidade e funcionalidade. Os usuários podem acessar a plataforma utilizando suas credenciais do GitHub, proporcionando uma autenticação rápida e segura. O chat permite comunicação instantânea, oferecendo uma experiência interativa e dinâmica para os participantes.",
+          "Em colaboração com a Alura, desenvolvi o Aluracord, uma aplicação de chat em tempo real que prioriza a simplicidade e a eficiência. A plataforma oferece autenticação rápida e segura via credenciais do GitHub, permitindo que os usuários acessem e interajam sem atritos. Este projeto proporciona uma experiência de comunicação instantânea, interativa e dinâmica para todos os participantes.",
         link: "https://aluracord-bay-gamma.vercel.app/",
         releaseDate: "Fevereiro/2022",
         repository: "https://github.com/fvxstx/aluracord",
@@ -287,7 +323,7 @@ export const projectsPaged: IPagedProjects = {
         ],
         title: "Countdown",
         description:
-          "Este foi um dos meus primeiros projetos desenvolvidos de forma independente. Trata-se de uma aplicação simples e funcional que permite aos usuários se inscreverem para receber fotos exclusivas de um renomado fotógrafo baiano. O sistema conta com um recurso de contagem regressiva (countdown) para criar expectativa e engajamento, oferecendo uma experiência envolvente e personalizada.",
+          "Desenvolvido de forma independente, o Countdown é uma aplicação otimizada para engajamento e funcionalidade, criada para um renomado fotógrafo baiano. O sistema permite aos usuários se inscreverem para receber fotos exclusivas, enquanto um recurso de contagem regressiva gera expectativa. Este projeto entregou uma experiência interativa e personalizada, demonstrando minha capacidade de desenvolver soluções eficazes desde as fases iniciais.",
         link: "https://countdown-zeta-nine.vercel.app/",
         releaseDate: "Julho/2022",
         repository: "https://github.com/fvxstx/Countdown",
@@ -303,7 +339,50 @@ export const projectsPaged: IPagedProjects = {
           "Sendgrid",
         ],
       },
+      {
+        imgs: ["/projects/salesweb/salesweb.png"],
+        title: "Sales Web",
+        description:
+          "O Sales Web é um sistema de gerenciamento de vendas abrangente, construído com funcionalidades CRUD (Criar, Ler, Atualizar e Excluir). A aplicação facilita a busca por dados de vendedores e departamentos, apresentando os resultados de forma clara e organizada em tabelas. Esta ferramenta se destaca como uma solução eficaz para o acompanhamento e gestão de informações de vendas, oferecendo uma interface intuitiva e prática para os usuários.",
+        releaseDate: "Setembro/2022",
+        repository: "https://github.com/fvxstx/SalesWeb",
+        techs: ["C#", ".Net", "SQL Server", "Bootstrap"],
+      },
+      {
+        imgs: [
+          "/projects/shortly/shortly.png",
+          "/projects/shortly/shortly2.png",
+          "/projects/shortly/shortly3.png",
+        ],
+        title: "Shortly",
+        description:
+          "Shortly é um projeto que desenvolvi para otimizar e simplificar o compartilhamento de links. A aplicação oferece a capacidade de encurtar URLs, tornando-as mais concisas e fáceis de usar. Adicionalmente, implementei a funcionalidade de ocultar links originais, agregando privacidade e um aspecto mais profissional à gestão de URLs. É uma solução prática e eficiente para a personalização e gerenciamento de links.",
+        link: "https://shortly-ashy.vercel.app/",
+        releaseDate: "Março/2023",
+        repository: "https://github.com/fvxstx/Shortly",
+        techs: [
+          "HTML",
+          "CSS",
+          "Typescript",
+          "React.JS",
+          "Next.JS",
+          "Styled-Component",
+        ],
+      },
+      {
+        imgs: [
+          "/projects/hspa/hspa.png",
+          "/projects/hspa/hspa2.png",
+          "/projects/hspa/hspa3.png",
+        ],
+        title: "HSPA",
+        description:
+          "HSPA é uma aplicação que desenvolvi para otimizar a gestão e comercialização de imóveis. A plataforma capacita os usuários a cadastrar propriedades, com a flexibilidade de indicá-las para venda ou aluguel. Com uma interface intuitiva, o sistema organiza e exibe as propriedades listadas, oferecendo uma experiência eficiente e prática tanto para proprietários quanto para potenciais interessados.",
+        releaseDate: "Junho/2023",
+        repository: "https://github.com/fvxstx/HSPA",
+        techs: ["HTML", "CSS", "Typescript", "AngularJS", "Bootstrap"],
+      },
     ],
   ],
-  totalProjects: 13,
+  totalProjects: 14,
 };
