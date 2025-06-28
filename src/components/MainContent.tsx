@@ -12,7 +12,7 @@ const MainContent = () => {
 
   return (
     <main className="flex flex-col-reverse md:flex-row gap-12 w-full items-center justify-center mt-4 md:mt-20 p-6">
-      <div className="w-[19rem] h-[19rem] sm:w-[26rem] sm:h-[26rem] rounded-full">
+      <div className="w-[18rem] h-[18rem] sm:w-[26rem] sm:h-[26rem] rounded-full">
         <Image
           width={400}
           height={400}
@@ -26,7 +26,7 @@ const MainContent = () => {
         <p className="font-semibold text-xl">{textLang("subtitle")}</p>
         <p className="w-72 sm:w-96 ">{textLang("description")}</p>
         <div>
-          <ul className="text-black font-bold text-lg md:text-xl flex justify-center items-center gap-2 md:gap-4 mt-4">
+          <ul className="text-black font-bold text-base md:text-xl flex justify-center items-center gap-2 md:gap-4 mt-4">
             <li
               onClick={() => {
                 navigation.push("/curriculo");
