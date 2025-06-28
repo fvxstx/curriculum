@@ -1,0 +1,51 @@
+{
+  "HomePage": {
+    "title": "Heya!",
+    "subtitle": "A bit of myself",
+    "description": "Computer Scientist and Full-Stack Developer with professional experience in both Brazil and internationally. Focused on creating robust and efficient software solutions.",
+    "button1": "Experiences",
+    "button2": "Projects",
+    "button3": "Contact"
+  },
+  "Header": {
+    "button1": "Experiences",
+    "button2": "Projects",
+    "button3": "Contact"
+  },
+  "Footer": {
+    "contactNumber": "Phone",
+    "socialMedia": "Follow me",
+    "politicyCookies": "Cookies Policies",
+    "politicyPrivacy": "Privacy Policies",
+    "for": "for"
+  },
+  "Contact": {
+    "title": "Contact",
+    "subtitle": "Let's talk!",
+    "phone": "Phone",
+    "name": "Name",
+    "surname": "Surname",
+    "subject": "Subject",
+    "message": "Message",
+    "send": "Send",
+    "sending": "Sending..."
+  },
+  "Experiences": {
+    "title": "Experiences",
+    "professional": "Professional Experiences",
+    "education": "Education",
+    "skillCertif": "Skills and Certifications",
+    "certifications": "Certifications"
+  },
+  "Projects": {
+    "title": "Projects",
+    "release": "release date",
+    "repository": "Repository",
+    "backButton": "Back",
+    "nextButton": "Next"
+  },
+  "Pagination": {
+    "previous": "Previous",
+    "next": "Next"
+  }
+}

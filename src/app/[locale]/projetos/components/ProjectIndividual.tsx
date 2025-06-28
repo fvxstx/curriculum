@@ -5,11 +5,13 @@ import {
   CarouselItem,
 } from "@/components/ui/carousel";
 import { IProject } from "@/data/Projects";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 import { useState } from "react";
 
 const ProjectIndividual = (proj: IProject) => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const translate = useTranslations("Projects");
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) =>
@@ -29,7 +31,7 @@ const ProjectIndividual = (proj: IProject) => {
         <h3 className="text-2xl md:text-3xl font-semibold mb-3">
           {proj.title}
           <p className="text-sm font-light">
-            data de lançamento: {proj.releaseDate}
+            {translate("release")}: {proj.releaseDate}
           </p>
         </h3>
         <p>{proj.description}</p>
@@ -47,7 +49,7 @@ const ProjectIndividual = (proj: IProject) => {
         )}
         {proj.repository && (
           <p>
-            Repositorio:{" "}
+            {translate("repository")}:{" "}
             <a
               target="_blank"
               href={proj.repository}
@@ -93,13 +95,13 @@ const ProjectIndividual = (proj: IProject) => {
             onClick={handleBack}
             className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition hover:bg-primary"
           >
-            Back
+            {translate("backButton")}
           </button>
           <button
             onClick={handleNext}
             className="px-4 py-2 bg-thirth text-white rounded-full hover:bg-primary-dark transition hover:bg-primary"
           >
-            Next
+            {translate("nextButton")}
           </button>
         </div>
       </div>

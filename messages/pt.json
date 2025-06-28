@@ -1,0 +1,51 @@
+{
+  "HomePage": {
+    "title": "Salve!",
+    "subtitle": "Um pouco sobre mim",
+    "description": "Cientista da Computação e desenvolvedor Full-Stack com uma vivência profissional que abrange o Brasil e o cenário internacional. Focado em criar soluções de software robustas e eficientes.",
+    "button1": "Currículo",
+    "button2": "Projetos",
+    "button3": "Contato"
+  },
+  "Header": {
+    "button1": "Currículo",
+    "button2": "Projetos",
+    "button3": "Contato"
+  },
+  "Footer": {
+    "contactNumber": "Telefone",
+    "socialMedia": "Me siga",
+    "politicyCookies": "Políticas de Cookies",
+    "politicyPrivacy": "Políticas de Privacidade",
+    "for": "por"
+  },
+  "Contact": {
+    "title": "Contato",
+    "subtitle": "Vamos conversar!",
+    "phone": "Telefone",
+    "name": "Nome",
+    "surname": "Sobrenome",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "send": "Enviar",
+    "sending": "Enviando..."
+  },
+  "Experiences": {
+    "title": "Currículo",
+    "professional": "Experiência Profissional",
+    "education": "Educação",
+    "skillCertif": "Skills & Cerficações",
+    "certifications": "Certificação"
+  },
+  "Projects": {
+    "title": "Projetos",
+    "release": "data de lançamento",
+    "repository": "Repositório",
+    "backButton": "Voltar",
+    "nextButton": "Próximo"
+  },
+  "Pagination": {
+    "previous": "Anterior",
+    "next": "Próximo"
+  }
+}

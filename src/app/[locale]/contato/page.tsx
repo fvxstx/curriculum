@@ -2,6 +2,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { zodResolver } from "@hookform/resolvers/zod";
+import { useTranslations } from "next-intl";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
@@ -21,6 +22,7 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 export default function ContatoPage() {
+  const textLang = useTranslations("Contact");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const {
     register,
@@ -69,15 +71,15 @@ export default function ContatoPage() {
         <main className="md:h-[420px] w-full flex flex-col md:flex-row justify-around items-start md:mt-20 px-6 md:px-24 lg:px-32 max-w-[1400px]">
           <div>
             <h2 className="text-3xl md:text-5xl font-bold w-fit mt-4 inline-block md:mt-8">
-              Contato
+              {textLang("title")}
             </h2>
-            <p className="text-lg mt-2">Vamos conversar!</p>
+            <p className="text-lg mt-2">{textLang("subtitle")}</p>
             <div className="flex mt-6 flex-col items-start ">
-              <p className="text-lg font-bold">Telefone</p>
+              <p className="text-lg font-bold">{textLang("phone")}</p>
               <p>+55 (71) 99974-6649</p>
             </div>
             <div className="flex mt-3 flex-col items-start ">
-              <p className="text-lg font-bold">Email</p>
+              <p className="text-lg font-bold">E-mail</p>
               <p>faut.btorres@gmail.com</p>
             </div>
           </div>
@@ -88,7 +90,7 @@ export default function ContatoPage() {
             <div className="flex flex-col md:flex-row w-full justify-between gap-4">
               <div className="col-span-2 md:col-span-1">
                 <label htmlFor="firstName" className="block font-semibold">
-                  Nome
+                  {textLang("name")}
                 </label>
                 <input
                   id="firstName"
@@ -105,7 +107,7 @@ export default function ContatoPage() {
 
               <div className="col-span-2 md:col-span-1">
                 <label htmlFor="lastName" className="block font-semibold">
-                  Sobrenome
+                  {textLang("surname")}
                 </label>
                 <input
                   id="lastName"
@@ -119,7 +121,7 @@ export default function ContatoPage() {
             <div className="flex flex-col md:flex-row w-full justify-between gap-4">
               <div className="col-span-2">
                 <label htmlFor="email" className="block font-semibold">
-                  Email *
+                  E-mail *
                 </label>
                 <input
                   id="email"
@@ -136,7 +138,7 @@ export default function ContatoPage() {
 
               <div className="col-span-2">
                 <label htmlFor="subject" className="block font-semibold">
-                  Assunto
+                  {textLang("subject")}
                 </label>
                 <input
                   id="subject"
@@ -150,7 +152,7 @@ export default function ContatoPage() {
             <div className="flex gap-4 items-center">
               <div className="col-span-2">
                 <label htmlFor="message" className="block font-semibold">
-                  Mensagem
+                  {textLang("message")}
                 </label>
                 <textarea
                   id="message"
@@ -171,7 +173,7 @@ export default function ContatoPage() {
                   disabled={isSubmitting}
                   className="w-20 h-20 md:w-32 md:h-32 rounded-full bg-yellow-500 text-lg md:text-2xl text-black font-bold"
                 >
-                  {isSubmitting ? "Enviando..." : "Enviar"}
+                  {isSubmitting ? textLang("sending") : textLang("send")}
                 </button>
               </div>
             </div>

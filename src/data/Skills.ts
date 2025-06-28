@@ -1,6 +1,6 @@
 import { IJob } from "./Jobs";
 
-export const skills: IJob[] = [
+export const skillsPortuguese: IJob[] = [
   {
     period: "",
     company: "",
@@ -56,6 +56,66 @@ export const skills: IJob[] = [
     period: "",
     company: "",
     job: "Utilitários",
+    description: ["• Git/Github", "• Docker", "• Unit Tests", "• Azure DevOps"],
+  },
+];
+
+export const skillsEnglish: IJob[] = [
+  {
+    period: "",
+    company: "",
+    job: "Frontend",
+    description: [
+      "• TypeScript/JavaScript",
+      "• React",
+      "• Next.js",
+      "• AngularJS",
+      "• Jest",
+      "• Zustand",
+      "• Tailwind CSS",
+      "• Styled Components",
+      "• SASS",
+      "• CSS",
+      "• HTML",
+    ],
+  },
+  {
+    period: "",
+    company: "",
+    job: "Backend",
+    description: [
+      "• C#",
+      "• .NET",
+      "• Entity Framework",
+      "• Dapper",
+      "• Node.JS",
+      "• Express.JS",
+    ],
+  },
+  {
+    period: "",
+    company: "",
+    job: "Patterns & Principles",
+    description: [
+      "• SOLID",
+      "• Design Patterns",
+      "• Best Practices",
+      "• SCRUM",
+      "• Clean Code",
+      "• Hexagonal Architecture",
+      "• DDD",
+    ],
+  },
+  {
+    period: "",
+    company: "",
+    job: "Database",
+    description: ["• PostgreSQL", "• MongoDB", "• MySQL", "• Supabase"],
+  },
+  {
+    period: "",
+    company: "",
+    job: "Tools & Utilities",
     description: ["• Git/Github", "• Docker", "• Unit Tests", "• Azure DevOps"],
   },
 ];
