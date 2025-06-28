@@ -3,6 +3,7 @@
 import { ArrowLeft, ArrowRight } from "lucide-react";
 
 import { Button } from "./ui/button";
+import { useTranslations } from "next-intl";
 
 export interface PaginationProps {
   pageIndex?: number;
@@ -18,6 +19,7 @@ export function Pagination({
   handlePage,
 }: PaginationProps) {
   const pages = Math.ceil(totalCount / perPage) || 1;
+  const translate = useTranslations("Pagination");
 
   return (
     <div className="flex font-sans items-center justify-between rounded-lg px-3 py-1 text-primary w-full">
@@ -29,7 +31,7 @@ export function Pagination({
           disabled={pageIndex === 1}
         >
           <ArrowLeft size={18} className="mr-2" />
-          <span className="font-medium">Anterior</span>
+          <span className="font-medium">{translate("previous")}</span>
         </Button>
       </div>
       <div className="flex items-center gap-6 py-4 lg:gap-8">
@@ -53,7 +55,7 @@ export function Pagination({
           variant="ghost"
           disabled={pageIndex === pages}
         >
-          <span className="font-medium">Próximo</span>
+          <span className="font-medium">{translate("next")}</span>
           <ArrowRight size={18} className="ml-2" />
         </Button>
       </div>
