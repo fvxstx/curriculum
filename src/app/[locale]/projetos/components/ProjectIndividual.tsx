@@ -1,4 +1,5 @@
 "use client";
+import { AnimatedSection } from "@/components/AnimatedSection/AnimatedSection";
 import {
   Carousel,
   CarouselContent,
@@ -27,7 +28,10 @@ const ProjectIndividual = (proj: IProject) => {
 
   return (
     <div className="flex flex-col md:flex-row gap-12 justify-center items-start p-2">
-      <div className="flex flex-col gap-3 justify-start max-w-[422px]">
+      <AnimatedSection
+        classNameInView="animate-fade-right animate-duration-[1500ms]"
+        baseClassName="flex flex-col gap-3 justify-start max-w-[422px]"
+      >
         <h3 className="text-2xl md:text-3xl font-semibold mb-3">
           {proj.title}
           <p className="text-sm font-light">
@@ -66,8 +70,11 @@ const ProjectIndividual = (proj: IProject) => {
             </span>
           ))}
         </div>
-      </div>
-      <div className="w-full md:w-[500px] h-auto">
+      </AnimatedSection>
+      <AnimatedSection
+        classNameInView="animate-fade-left animate-duration-[1500ms]"
+        baseClassName="w-full md:w-[500px] h-auto"
+      >
         <Carousel className="w-full overflow-hidden">
           <CarouselContent
             className="flex max-h-[282px] transition-transform duration-300"
@@ -104,7 +111,7 @@ const ProjectIndividual = (proj: IProject) => {
             {translate("nextButton")}
           </button>
         </div>
-      </div>
+      </AnimatedSection>
     </div>
   );
 };

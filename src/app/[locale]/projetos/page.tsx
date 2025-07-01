@@ -24,7 +24,7 @@ export default function ProjetosPage() {
       <div className="flex flex-col w-full items-center justify-center ">
         <Header />
         <main className="w-full flex flex-col justify-center items-center px-6  md:px-24 lg:px-32 max-w-[1400px] ">
-          <h2 className="text-3xl md:text-5xl font-bold w-full mt-4 mb-8 md:mt-8 md:mb-20">
+          <h2 className="text-3xl md:text-5xl font-bold w-full mt-4 mb-8 md:mt-8 md:mb-20 animate-fade-down animate-duration-[1500ms]">
             {translate("title")}
           </h2>
           <section className="flex flex-col gap-20 md:gap-32">

@@ -1,8 +1,12 @@
+import { AnimatedSection } from "@/components/AnimatedSection/AnimatedSection";
 import { IJob } from "@/data/Jobs";
 
 const JobComponent = ({ period, job, company, description }: IJob) => {
   return (
-    <div className="flex flex-col md:flex-row gap-2 md:gap-10">
+    <AnimatedSection
+      baseClassName="flex flex-col md:flex-row gap-2 md:gap-10"
+      classNameInView="animate-fade-left animate-duration-[1500ms]"
+    >
       {period && <p className="min-w-[137px]">{period}</p>}
       <div>
         <h4 className="font-bold">{job}</h4>
@@ -15,7 +19,7 @@ const JobComponent = ({ period, job, company, description }: IJob) => {
           ))}
         </div>
       </div>
-    </div>
+    </AnimatedSection>
   );
 };
 
