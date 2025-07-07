@@ -46,7 +46,7 @@ const SwitchLanguages = () => {
           />
         )}
       </button>
-      <div className="absolute right-0 w-40 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+      <div className="z-20 absolute right-0 w-40 mt-2 origin-top-right bg-white rounded-md shadow-lg ring-1 ring-black ring-opacity-5 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
         <div className="py-1" role="menu" aria-orientation="vertical">
           {languages.map((lang) => (
             <button
