@@ -9,6 +9,12 @@ export const certificacaoPortuguese: IJob[] = [
   },
   {
     period: "",
+    company: "SCRUMStudy",
+    job: "Scrum Fundamentals Certified (SFC™)",
+    description: [""],
+  },
+  {
+    period: "",
     company: "Faculdade Descomplica",
     job: "Smart Data Structures",
     description: [""],
@@ -86,6 +92,12 @@ export const certificacaoEnglish: IJob[] = [
     period: "",
     company: "IELTS Official 2023",
     job: "Standard English/Western Certification C1",
+    description: [""],
+  },
+  {
+    period: "",
+    company: "SCRUMStudy",
+    job: "Scrum Fundamentals Certified (SFC™)",
     description: [""],
   },
   {

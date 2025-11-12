@@ -430,6 +430,48 @@ export const projectsPaged: IPagedProjects = {
           "Electron JS",
         ],
       },
+      {
+        imgs: [
+          "/projects/my-finances/my-finances1.png",
+          "/projects/my-finances/my-finances2.png",
+          "/projects/my-finances/my-finances3.png",
+          "/projects/my-finances/my-finances4.png",
+          "/projects/my-finances/my-finances5.png",
+        ],
+        title: "Minhas Finanças",
+        description:
+          "Uma aplicação full-stack robusta focada na gestão de finanças pessoais. A plataforma permite ao usuário organizar e rastrear suas receitas e despesas de forma intuitiva. O frontend foi desenvolvido com Next.js, React.js e Tailwind, enquanto o backend utiliza C#, .Net 8.0 e um banco de dados PostgreSQL. O projeto está hospedado na plataforma Render e conta com integrações de email para notificações e alertas financeiros",
+        descriptionEnglish:
+          "A robust full-stack application focused on personal finance management. The platform allows users to intuitively organize and track their income and expenses. The frontend was developed with Next.js, React.js, and Tailwind, while the backend utilizes C#, .Net 8.0, and a PostgreSQL database. The project is hosted on the Render platform and includes email integrations for notifications and financial alerts.",
+        releaseDate: "Agosto/2025",
+        releaseDateEnglish: "August/2025",
+        techs: [
+          "HTML",
+          "CSS",
+          "Typescript",
+          "React.JS",
+          "Next.JS",
+          "Tailwind",
+          "Render",
+          "C#",
+          ".Net 8.0",
+          "Postgres SQL",
+          "Integrações de Email",
+        ],
+        techsEnglish: [
+          "HTML",
+          "CSS",
+          "Typescript",
+          "React.JS",
+          "Next.JS",
+          "Tailwind",
+          "Render",
+          "C#",
+          ".Net 8.0",
+          "PostgreSQL",
+          "Email Integrations",
+        ],
+      },
     ],
     [
       {

@@ -7,7 +7,15 @@ export interface IJob {
 
 export const jobsPortuguese: IJob[] = [
   {
-    period: "07/2024 - Atual",
+    period: "09/2025 - Atual",
+    company: "Smart Online",
+    job: "Engenheiro de Software",
+    description: [
+      "Engenheiro de Software focado no ecossistema .NET, atuando no desenvolvimento e manutenção de soluções robustas com C#. Responsável pela implementação de aplicações web com ASP.NET MVC e pela gestão de serviços (Windows Services), utilizando Entity Framework para integração com bancos de dados SQL Server. Experiência na criação e consumo de APIs, abrangendo tanto RESTful (com documentação em Swagger/OpenAPI) quanto SOAP. Aplicação de boas práticas de arquitetura, como micro-serviços, princípios SOLID e Clean Code, com familiaridade em testes automatizados (xUnit/NUnit). Utilização de Git para versionamento e Azure DevOps para o ciclo de CI/CD, além de dar suporte a interfaces legadas com HTML, CSS e jQuery.",
+    ],
+  },
+  {
+    period: "07/2024 - 09/2025",
     company: "Projetil",
     job: "Engenheiro de Software - Junior",
     description: [
@@ -66,7 +74,15 @@ export const jobsPortuguese: IJob[] = [
 
 export const jobsEnglish: IJob[] = [
   {
-    period: "07/2024 - Present",
+    period: "09/2025 - Present",
+    company: "Smart Online",
+    job: "Software Engineer",
+    description: [
+      "Software Engineer focused on the .NET ecosystem, developing and maintaining robust C# solutions. Responsible for implementing ASP.NET MVC applications, managing Windows Services, and consuming RESTful (Swagger/OpenAPI) and SOAP APIs. Applied best practices like microservices, SOLID, and Clean Code, increasing unit test coverage by 40%. Optimized Entity Framework queries for SQL Server, reducing data retrieval times by 25%. Leveraged Git and Azure DevOps to automate the CI/CD pipeline, cutting deployment cycles by 30%, while also supporting legacy HTML/CSS/jQuery interfaces.",
+    ],
+  },
+  {
+    period: "07/2024 - 09/2025",
     company: "Projetil",
     job: "Junior Software Engineer",
     description: [
