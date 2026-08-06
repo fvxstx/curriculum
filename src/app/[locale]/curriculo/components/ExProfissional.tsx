@@ -1,7 +1,7 @@
 import { jobsEnglish, jobsPortuguese } from "@/data/Jobs";
-import JobComponent from "./Job";
 import { getLocale, getTranslations } from "next-intl/server";
 import { AnimatedSection } from "@/components/AnimatedSection/AnimatedSection";
+import ExProfissionalTimeline from "./ExProfissionalTimeline";
 
 const ExProfissional = async () => {
   const translate = await getTranslations("Experiences");
@@ -25,20 +25,11 @@ const ExProfissional = async () => {
         <div className="relative flex-1 pl-1 md:pl-2">
           <div className="pointer-events-none absolute left-[6px] top-0 h-full w-[2px] rounded-full bg-gradient-to-b from-[#ff9472] via-[#8ec5ff] to-[#93a8ac] md:left-[8px]" />
 
-          <div className="flex flex-col gap-8 md:gap-10">
-            {(locale == "en" ? jobsEnglish : jobsPortuguese).map(
-              (job, index) => (
-                <JobComponent
-                  key={index}
-                  period={job.period}
-                  company={job.company}
-                  job={job.job}
-                  description={job.description}
-                  variant="timeline"
-                />
-              ),
-            )}
-          </div>
+          <ExProfissionalTimeline
+            jobs={locale == "en" ? jobsEnglish : jobsPortuguese}
+            initialVisible={3}
+            seeMoreLabel={translate("seeMore")}
+          />
         </div>
       </div>
     </section>
