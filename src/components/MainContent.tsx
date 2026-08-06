@@ -26,9 +26,6 @@ const MainContent = () => {
       </div>
 
       <div className="order-1 flex flex-col gap-4 md:order-2">
-        <div className="inline-flex w-fit items-center rounded-full border border-[#424B54]/20 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#424B54] animate-fade-left animate-duration-[1400ms]">
-          {textLang("badge")}
-        </div>
         <h2 className="mb-1 text-5xl font-bold leading-tight text-[#1f2d3d] animate-fade-left animate-duration-[1700ms] md:text-6xl">
           {textLang("title")}
         </h2>

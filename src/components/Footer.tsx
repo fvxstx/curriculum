@@ -7,9 +7,9 @@ const Footer = () => {
   const textLang = useTranslations("Footer");
 
   return (
-    <footer className="w-full  p-6">
+    <footer className="w-full px-6 sm:px-20 py-6">
       <div className="w-full h-[1px] bg-[#c7c7c7] my-8"></div>
-      <div className="flex flex-col gap-4 md:gap-0 md:flex-row md:justify-between">
+      <div className="flex flex-col gap-4 md:gap-20 lg:gap-32 xl:gap-52 md:flex-row md:justify-center">
         <div>
           <p className="font-bold text-xl mb-2">{textLang("contactNumber")}</p>
           <p>+55 (71) 99974-9949</p>
