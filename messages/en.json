@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "title": "Heya!",
+    "badge": "Portfolio",
     "subtitle": "A bit of myself",
     "description": "Computer Scientist and Full-Stack Developer with professional experience in both Brazil and internationally. Focused on creating robust and efficient software solutions.",
     "button1": "Experiences",
@@ -23,23 +24,43 @@
     "title": "Contact",
     "subtitle": "Let's talk!",
     "phone": "Phone",
+    "emailLabel": "E-mail",
+    "emailRequiredLabel": "E-mail *",
     "name": "Name",
     "surname": "Surname",
     "subject": "Subject",
     "message": "Message",
     "send": "Send",
-    "sending": "Sending..."
+    "sending": "Sending...",
+    "availability": "Quick replies for proposals, freelance work, and collaborations.",
+    "subjectFallback": "No Subject",
+    "sendSuccess": "Email sent successfully!",
+    "sendError": "An error occurred while sending your email. Please try again later.",
+    "sendRequestError": "Error sending email",
+    "firstNameRequired": "First name is required",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email",
+    "messageRequired": "Message is required"
   },
   "Experiences": {
     "title": "Experiences",
+    "heroBadge": "Curriculum 2026",
+    "heroChip1": "Full-Stack",
+    "heroChip2": ".NET + Next.js",
+    "heroChip3": "Brazil + International",
     "professional": "Professional Experiences",
+    "professionalDescription": "Timeline of my professional journey, from the first step until now.",
     "education": "Education",
+    "educationDescription": "Academic background and language certifications that built my foundation.",
     "skillCertif": "Skills and Certifications",
+    "skills": "Skills",
     "certifications": "Certifications"
   },
   "Projects": {
     "title": "Projects",
+    "intro": "Visual experiments, real products, and technical studies in a curated paginated collection.",
     "release": "release date",
+    "linkLabel": "Link",
     "repository": "Repository",
     "backButton": "Back",
     "nextButton": "Next"

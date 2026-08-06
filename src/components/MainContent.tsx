@@ -1,86 +1,66 @@
 "use client";
 
-import { useRouter } from "@/i18n/navigation";
-import { useLocale, useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
 
 const MainContent = () => {
-  const navigation = useRouter();
-  const locate = useLocale();
   const textLang = useTranslations("HomePage");
 
   return (
-    <main className="flex flex-col-reverse md:flex-row gap-12 w-full items-center justify-center mt-4 md:mt-20 p-6">
-      <div className="w-[18rem] h-[18rem] sm:w-[26rem] sm:h-[26rem] rounded-full">
-        <Image
-          width={400}
-          height={400}
-          src="/me.jpg"
-          alt="profile foto"
-          className="w-full h-full rounded-full animate-fade-up animate-duration-[2000ms]"
-        />
-      </div>
-      <div className="flex flex-col gap-2">
-        <h2
-          className="font-bold text-6xl mb-6 animate-fade-left animate-duration-[2000ms] animate-delay-[1000ms]
-"
-        >
-          {textLang("title")}
-        </h2>
-        <p
-          className="font-semibold text-xl animate-fade-left animate-duration-[2000ms] animate-delay-[1500ms]
-"
-        >
-          {textLang("subtitle")}
-        </p>
-        <p
-          className="w-72 sm:w-96 animate-fade-left animate-duration-[2000ms] animate-delay-[2000ms]
-"
-        >
-          {textLang("description")}
-        </p>
-        <div>
-          <ul className="text-black font-bold text-base md:text-xl flex justify-center items-center gap-2 md:gap-4 mt-4">
-            <li
-              onClick={() => {
-                navigation.push("/curriculo");
-              }}
-              className="bg-primary hover:bg-transparent hover:border-2 hover:border-primary hover:text-primary p-4 w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center rounded-full border
-               border-black cursor-pointer animate-fade-left animate-duration-[2000ms] animate-delay-[2500ms]"
-            >
-              <Link href="/curriculo" locale={locate}>
-                {textLang("button1")}
-              </Link>
-            </li>
-            <li
-              onClick={() => {
-                navigation.push("/projetos");
-              }}
-              className="bg-secondary hover:bg-transparent hover:border-2 hover:border-secondary hover:text-secondary p-4 
-              w-24 h-24 sm:w-32 sm:h-32 flex items-center justify-center rounded-full border border-black cursor-pointer 
-              animate-fade-left animate-duration-[2000ms] animate-delay-[3000ms]"
-            >
-              <Link href="/projetos" locale={locate}>
-                {textLang("button2")}
-              </Link>
-            </li>
-            <li
-              onClick={() => {
-                navigation.push("/contato");
-              }}
-              className="bg-thirth hover:bg-transparent hover:border-2 hover:border-thirth hover:text-thirth p-4 w-24 h-24 
-              sm:w-32 sm:h-32 flex items-center justify-center rounded-full border border-black cursor-pointer animate-fade-left 
-              animate-duration-[2000ms] animate-delay-[3500ms]"
-            >
-              <Link href="/contato" locale={locate}>
-                {textLang("button3")}
-              </Link>
-            </li>
-          </ul>
+    <section className="grid w-full grid-cols-1 items-center gap-10 rounded-[2rem] border border-white/60 bg-white/70 p-6 shadow-[0_20px_60px_rgba(66,75,84,0.12)] backdrop-blur-sm md:grid-cols-2 md:p-10 lg:gap-14 lg:p-12">
+      <div className="order-2 flex justify-center md:order-1">
+        <div className="relative h-[18rem] w-[18rem] sm:h-[24rem] sm:w-[24rem] lg:h-[26rem] lg:w-[26rem]">
+          <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-[#93a8ac] via-[#e2b4bd] to-[#c5d5e4] p-[6px] animate-fade-up animate-duration-[1600ms]">
+            <Image
+              width={500}
+              height={500}
+              src="/me.jpg"
+              alt="profile foto"
+              className="h-full w-full rounded-full object-cover object-center"
+            />
+          </div>
+          <span className="absolute -right-6 top-8 hidden h-12 w-12 rounded-2xl bg-[#ffb88f]/60 blur-[1px] md:block" />
+          <span className="absolute -bottom-3 left-8 hidden h-10 w-20 rounded-full bg-[#8ec5ff]/60 blur-[1px] md:block" />
         </div>
       </div>
-    </main>
+
+      <div className="order-1 flex flex-col gap-4 md:order-2">
+        <div className="inline-flex w-fit items-center rounded-full border border-[#424B54]/20 bg-white/80 px-4 py-2 text-xs font-semibold uppercase tracking-[0.22em] text-[#424B54] animate-fade-left animate-duration-[1400ms]">
+          {textLang("badge")}
+        </div>
+        <h2 className="mb-1 text-5xl font-bold leading-tight text-[#1f2d3d] animate-fade-left animate-duration-[1700ms] md:text-6xl">
+          {textLang("title")}
+        </h2>
+        <p className="text-xl font-semibold text-[#344255] animate-fade-left animate-duration-[1700ms] animate-delay-[200ms]">
+          {textLang("subtitle")}
+        </p>
+        <p className="max-w-xl text-[#3f4a57] animate-fade-left animate-duration-[1700ms] animate-delay-[400ms]">
+          {textLang("description")}
+        </p>
+
+        <div className="mt-3 grid grid-cols-1 gap-3 text-sm font-bold text-[#1f2d3d] sm:grid-cols-3">
+          <Link
+            href="/curriculo"
+            className="rounded-2xl border border-[#93a8ac]/35 bg-[#f6fbff] px-4 py-4 text-center transition-all duration-300 hover:-translate-y-1 hover:bg-[#eef6ff] animate-fade-left animate-duration-[1700ms] animate-delay-[500ms]"
+          >
+            {textLang("button1")}
+          </Link>
+          <Link
+            href="/projetos"
+            className="rounded-2xl border border-[#e2b4bd]/45 bg-[#fff5f8] px-4 py-4 text-center transition-all duration-300 hover:-translate-y-1 hover:bg-[#ffecf3] animate-fade-left animate-duration-[1700ms] animate-delay-[700ms]"
+          >
+            {textLang("button2")}
+          </Link>
+          <Link
+            href="/contato"
+            className="rounded-2xl border border-[#c5d5e4]/55 bg-[#f5f8ff] px-4 py-4 text-center transition-all duration-300 hover:-translate-y-1 hover:bg-[#edf3ff] animate-fade-left animate-duration-[1700ms] animate-delay-[900ms]"
+          >
+            {textLang("button3")}
+          </Link>
+        </div>
+      </div>
+    </section>
   );
 };
 
