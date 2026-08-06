@@ -12,18 +12,22 @@ const SkillsCertification = async () => {
   const locale = await getLocale();
 
   return (
-    <section className="flex flex-col items-start w-full gap-4">
-      <AnimatedSection classNameInView="animate-fade-right animate-duration-[2000ms]">
-        <h3 className="text-2xl md:text-3xl font-semibold mb-6">
+    <section className="w-full rounded-[2rem] border border-white/70 bg-white/70 p-6 shadow-[0_20px_40px_rgba(66,75,84,0.1)] backdrop-blur-sm md:p-10">
+      <AnimatedSection classNameInView="animate-fade-right animate-duration-[1700ms]">
+        <h3 className="mb-6 text-2xl font-semibold text-[#1f2d3d] md:text-3xl">
           {translate("skillCertif")}
         </h3>
       </AnimatedSection>
-      <div className="flex flex-col md:flex-row justify-between items-start w-full gap-4">
-        <div className="flex flex-col gap-4">
-          <AnimatedSection classNameInView="animate-fade-down animate-duration-[2000ms]">
-            <h4 className="text-xl md:text-2xl font-bold">Skills</h4>
+
+      <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-10">
+        <div className="rounded-3xl border border-[#93a8ac]/30 bg-[#f8fbff]/80 p-5 md:p-7">
+          <AnimatedSection classNameInView="animate-fade-down animate-duration-[1700ms]">
+            <h4 className="mb-5 text-xl font-bold text-[#1f2d3d] md:text-2xl">
+              {translate("skills")}
+            </h4>
           </AnimatedSection>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-16">
+
+          <div className="grid grid-cols-1 gap-4">
             {(locale == "en" ? skillsEnglish : skillsPortuguese).map(
               (job, index) => (
                 <JobComponent
@@ -33,18 +37,23 @@ const SkillsCertification = async () => {
                   job={job.job}
                   description={job.description}
                 />
-              )
+              ),
             )}
           </div>
         </div>
-        <div className="flex flex-col gap-4 mt-16 md:mt-0">
-          <AnimatedSection classNameInView="animate-fade-down animate-duration-[2000ms]">
-            <h4 className="text-xl md:text-2xl font-bold">
+
+        <div className="rounded-3xl border border-[#93a8ac]/30 bg-[#fffaf8]/80 p-5 md:p-7">
+          <AnimatedSection classNameInView="animate-fade-down animate-duration-[1700ms]">
+            <h4 className="mb-5 text-xl font-bold text-[#1f2d3d] md:text-2xl">
               {translate("certifications")}
             </h4>
           </AnimatedSection>
-          {(locale == "en" ? certificacaoEnglish : certificacaoPortuguese).map(
-            (job, index) => (
+
+          <div className="grid grid-cols-1 gap-4">
+            {(locale == "en"
+              ? certificacaoEnglish
+              : certificacaoPortuguese
+            ).map((job, index) => (
               <JobComponent
                 key={index}
                 period={job.period}
@@ -52,8 +61,8 @@ const SkillsCertification = async () => {
                 job={job.job}
                 description={job.description}
               />
-            )
-          )}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 {
   "HomePage": {
     "title": "Salve!",
+    "badge": "Portfólio",
     "subtitle": "Um pouco sobre mim",
     "description": "Cientista da Computação e desenvolvedor Full-Stack com uma vivência profissional que abrange o Brasil e o cenário internacional. Focado em criar soluções de software robustas e eficientes.",
     "button1": "Currículo",
@@ -23,23 +24,43 @@
     "title": "Contato",
     "subtitle": "Vamos conversar!",
     "phone": "Telefone",
+    "emailLabel": "E-mail",
+    "emailRequiredLabel": "E-mail *",
     "name": "Nome",
     "surname": "Sobrenome",
     "subject": "Assunto",
     "message": "Mensagem",
     "send": "Enviar",
-    "sending": "Enviando..."
+    "sending": "Enviando...",
+    "availability": "Resposta rápida e direcionada para propostas, freelas e colaborações.",
+    "subjectFallback": "Sem Assunto",
+    "sendSuccess": "Email enviado com sucesso!",
+    "sendError": "Ocorreu um erro ao enviar o email. Tente novamente mais tarde.",
+    "sendRequestError": "Erro ao enviar o email",
+    "firstNameRequired": "Nome é obrigatório",
+    "emailRequired": "Email é obrigatório",
+    "emailInvalid": "Email inválido",
+    "messageRequired": "Mensagem é obrigatória"
   },
   "Experiences": {
     "title": "Currículo",
+    "heroBadge": "Currículo 2026",
+    "heroChip1": "Full-Stack",
+    "heroChip2": ".NET + Next.js",
+    "heroChip3": "Brasil + Internacional",
     "professional": "Experiência Profissional",
+    "professionalDescription": "Timeline da minha jornada profissional, do primeiro passo até hoje.",
     "education": "Educação",
+    "educationDescription": "Formação acadêmica e certificações linguísticas que construíram minha base.",
     "skillCertif": "Skills & Cerficações",
+    "skills": "Skills",
     "certifications": "Certificação"
   },
   "Projects": {
     "title": "Projetos",
+    "intro": "Experimentos visuais, produtos reais e estudos técnicos em uma curadoria paginada.",
     "release": "data de lançamento",
+    "linkLabel": "Link",
     "repository": "Repositório",
     "backButton": "Voltar",
     "nextButton": "Próximo"

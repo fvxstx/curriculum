@@ -1,13 +1,10 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
 import MainContent from "@/components/MainContent";
+import PageScaffold from "@/components/PageScaffold";
 
 export default function Home() {
   return (
-    <>
-      <Header />
+    <PageScaffold mainClassName="items-center justify-center py-8 md:py-12">
       <MainContent />
-      <Footer />
-    </>
+    </PageScaffold>
   );
 }

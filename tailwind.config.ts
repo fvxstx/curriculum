@@ -21,6 +21,10 @@ const config: Config = {
           foreground: "#424B6F",
         },
       },
+      backgroundImage: {
+        "cv-gradient":
+          "linear-gradient(to bottom, #fff8f2 0%, #f6f8ff 52%, #edf5ff 100%)",
+      },
       fontFamily: {
         supreme: [
           "Supreme-Variable", // Primary variable font

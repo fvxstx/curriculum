@@ -15,6 +15,18 @@ export const certificacaoPortuguese: IJob[] = [
   },
   {
     period: "",
+    company: "Universidade Salvador - UNIFACS",
+    job: "Gestão e Qualidade de Software",
+    description: [""],
+  },
+  {
+    period: "",
+    company: "Universidade Salvador - UNIFACS",
+    job: "Modelos, métodos e técnicas da engenharia de software",
+    description: [""],
+  },
+  {
+    period: "",
     company: "Faculdade Descomplica",
     job: "Smart Data Structures",
     description: [""],
@@ -98,6 +110,18 @@ export const certificacaoEnglish: IJob[] = [
     period: "",
     company: "SCRUMStudy",
     job: "Scrum Fundamentals Certified (SFC™)",
+    description: [""],
+  },
+  {
+    period: "",
+    company: "University Salvador - UNIFACS",
+    job: "Management and Software Quality",
+    description: [""],
+  },
+  {
+    period: "",
+    company: "University Salvador - UNIFACS",
+    job: "Models, methods and techniques of software engineering",
     description: [""],
   },
   {
