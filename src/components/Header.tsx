@@ -17,7 +17,7 @@ const Header = () => {
   const isActive = (path: string) => pathname === path;
 
   return (
-    <header className="flex w-full justify-between p-6 max-w-[1400px]">
+    <header className="flex w-full justify-between px-6 sm:px-20 py-6 max-w-[1400px]">
       <a className="flex gap-3 items-center justify-center" href="/">
         <div className="rounded-full w-8 h-8 bg-secondary hidden md:block"></div>
         <h1 className="font-bold text-xl max-w-40 md:max-w-full">

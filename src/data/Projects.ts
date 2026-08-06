@@ -323,8 +323,8 @@ export const projectsData: IProjectsData = {
         "Desenvolvi o Eco Caixa, um site robusto e dinâmico projetado para fabricação de caixas e montagem, entregando uma experiência completa e informativa para a fabrica de caixas otimizar seus processos e facilitar para os seus funcionarios.",
       descriptionEnglish:
         "I developed Eco Caixa, a robust and dynamic website designed for box manufacturing and assembly, delivering a complete and informative experience for the box factory to optimize its processes and facilitate its employees' work.",
-      releaseDate: "Setembro/2025",
-      releaseDateEnglish: "September/2025",
+      releaseDate: "Outubro/2025",
+      releaseDateEnglish: "October/2025",
       techs: [
         "HTML",
         "CSS",
@@ -363,8 +363,8 @@ export const projectsData: IProjectsData = {
         "Ajudei na construção do frontend do projeto CadPro, uma aplicação web voltada para busca de informações sobre pessoas através de numero de documento, endereço, telefone e outros dados. A plataforma foi desenvolvida para venda e analise de buscas de pessoas fisicas e juridicas.",
       descriptionEnglish:
         "I helped build the frontend of the CadPro project, a web application focused on searching for information about people through document numbers, addresses, phone numbers, and other data. The platform was developed for the sale and analysis of searches for individuals and legal entities.",
-      releaseDate: "Novembro/2025",
-      releaseDateEnglish: "November/2025",
+      releaseDate: "Janeiro/2026",
+      releaseDateEnglish: "January/2026",
       techs: ["HTML", "CSS", "Typescript", "React.JS", "Next.JS", "Tailwind"],
       techsEnglish: [
         "HTML",
@@ -387,8 +387,9 @@ export const projectsData: IProjectsData = {
         "Landing page desenvolvida para a AMAVI, uma assessoria de eventos focado em casamentos na Bahia e região, com o objetivo de apresentar sua identidade e portfólio de serviços. A plataforma inclui uma seção de galeria para manter os usuários atualizados dos casamentos, e uma página de contato dedicada a suporte e atendimento. Esta solução abrangente comunica eficazmente a expertise da AMAVI, engaja seu público e fortalece sua presença digital.",
       descriptionEnglish:
         "Landing page developed for AMAVI, an event consultancy focused on weddings in Bahia and the surrounding region, aimed at presenting its identity and service portfolio. The platform includes a gallery section to keep users updated on weddings, and a dedicated contact page for support and service. This comprehensive solution effectively communicates AMAVI's expertise, engages its audience, and strengthens its digital presence.",
-      releaseDate: "Janeiro/2026",
-      releaseDateEnglish: "January/2026",
+      releaseDate: "Março/2026",
+      releaseDateEnglish: "March/2026",
+      link: "https://www.amaviassessoria.com/",
       techs: [
         "HTML",
         "CSS",
