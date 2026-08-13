@@ -6,6 +6,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { notFound } from "next/navigation";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Fausto Torres",
@@ -36,6 +37,7 @@ export default async function RootLayout({
           hideProgressBar={true}
           closeOnClick
         />
+        <Analytics />
       </body>
     </html>
   );
